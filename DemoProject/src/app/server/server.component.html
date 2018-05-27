@@ -1,3 +1,5 @@
 <!--- <p>I'm Server Component with ServerId {{ serverId }} and status {{ serverStatus }}</p>  OR ---->
 
-<p [ngStyle]="{backgroundColor: getColor()}" >I'm Server Component with ServerId {{ serverId }} and status {{ getServerStatus() }}</p>
+<p [ngStyle]="{backgroundColor: getColor()}"
+ [ngClass]="{online: serverStatus === 'online'}">
+ I'm Server Component with ServerId {{ serverId }} and status {{ getServerStatus() }}</p>
