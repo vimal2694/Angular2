@@ -9,7 +9,7 @@ import {
   styleUrls: ['./server-element.component.css']
 })
 export class ServerElementComponent implements OnInit {
-  @Input() element: {type: string, name: string, content: string};
+  @Input('srvElement') element: {type: string, name: string, content: string};
 
   constructor() {
     console.log('constructor called!');
