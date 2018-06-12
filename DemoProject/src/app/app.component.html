@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Hi started learning angular6</h1>
+            <hr>
+          <!---  <app-servers></app-servers> ---->
+
+          <!--- <div app-servers></div>              <!--- app-servers as an attribute ---->
+
+        <button class="btn btn-primary"
+ 
+(click)='onToggleBtn()' >Display Details</button>
+
+<p *ngIf = "displayPassword">'Secret Password-tuna'</p>
+<div *ngFor = 'let logItem of log'
+   [ngStyle] = "{backgroundColor: logItem >= 5 ? 'blue': 'transparent'}"
+   [ngClass] = "{'white-text': logItem >= 5}">
+    {{ logItem }}
+</div>    
+          <div class="app-servers"></div>
+        </div>
+    </div>
+</div>    
