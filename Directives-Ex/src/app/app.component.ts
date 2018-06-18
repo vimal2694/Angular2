@@ -11,6 +11,6 @@ export class AppComponent {
   even = [2,4]
   onlyOdd = false;
   
-  
+  value = 10;
 
 }
