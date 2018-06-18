@@ -20,14 +20,14 @@
       <div *ngIf = "!onlyOdd">
         <li
           class="list-group-item"
-          appBasicHighlight
+          appBasicHighlight 
           *ngFor = "let evenNumber of even">
           {{evenNumber}}
         </li>
       </div>
       </ul>
       <ng-template [ngIf]="onlyOdd">
-        <p appBetterHighlight>Only odd</p>
+        <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Only odd</p>
       </ng-template>
     </div>
   </div>
