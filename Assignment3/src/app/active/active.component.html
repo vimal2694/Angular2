@@ -1,0 +1,3 @@
+<div *ngFor="let users of activeUsers; let i = index">
+  {{users}} | <a href="#" (click)= "onSetToInactive(i)">Add to Inactive</a> 
+</div>
